@@ -9,3 +9,16 @@
 <br/>
 
 <button (click)="onShowCourses()">Mostrar coursos</button>
+
+
+<h5>Hidden</h5>
+<div [hidden]="!courses.length">
+  Lista de cursos aqui
+</div>
+<div [hidden]="!showCourses">
+  Não existem cursos para serem listados
+</div>
+
+<br/>
+
+<button (click)="onShowCourses()">Mostrar coursos</button>
