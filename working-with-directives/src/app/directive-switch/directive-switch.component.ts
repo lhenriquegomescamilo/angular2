@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectiveSwitchComponent implements OnInit {
 
-  public tab: string = 'home';
+  public tab: string = '';
 
   constructor() { }
 
