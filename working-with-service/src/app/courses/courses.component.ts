@@ -11,10 +11,8 @@ export class CoursesComponent implements OnInit {
 
   courses: string[] = [];
 
-  courseService?: CoursesService;
   
-  constructor() {
-    this.courseService  = new CoursesService();
+  constructor(private courseService: CoursesService) {
    }
 
   ngOnInit() {
