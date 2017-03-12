@@ -6,11 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./directives-ngif.component.css']
 })
 export class DirectivesNgifComponent implements OnInit {
+
+
   courses: string[] = ['Angular 2'];
 
   showCourses: boolean = false;
+  private _name?: string;
 
-  constructor() { }
+  constructor() {
+  }
+
+  set name(name: string){
+    this._name = name;
+  }
+
+  get name(): string {
+    return this._name;
+  }
 
   ngOnInit() {
   }

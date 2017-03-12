@@ -1,0 +1,10 @@
+<ul class="nav nav-pills">
+  <li role="presentation" [class.active]="tab == 'home'" (click)="tab = 'home'"><a href="#">Home</a></li>
+  <li role="presentation" [class.active]="tab == 'profile'" (click)="tab = 'profile'"><a>Profile</a></li>
+  <li role="presentation" [class.active]="tab == 'message'" (click)="tab = 'message'"><a>Messages</a></li>
+</ul>
+<div class="container" [ngSwitch]="tab">
+  <p *ngSwitchCase="'home'">Showing Home</p>
+  <p *ngSwitchCase="'profile'">Showing profile</p>
+  <p *ngSwitchCase="'message'">Showing message</p>
+</div>

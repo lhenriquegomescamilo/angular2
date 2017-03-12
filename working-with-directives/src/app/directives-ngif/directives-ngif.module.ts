@@ -1,3 +1,4 @@
+import { DirectivesNgifComponent } from './directives-ngif.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -5,6 +6,6 @@ import { CommonModule } from '@angular/common';
   imports: [
     CommonModule
   ],
-  declarations: []
+  declarations: [ DirectivesNgifComponent]
 })
 export class DirectivesNgifModule { }
