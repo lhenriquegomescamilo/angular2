@@ -11,11 +11,14 @@ export class CoursesComponent implements OnInit {
 
   courses: string[] = [];
 
-  
+
   constructor(private courseService: CoursesService) {
-   }
+  }
 
   ngOnInit() {
+    this.courseService
+      .getEmitterCourseCreated()
+      .subscribe(course => this.courseService.addCourse(course));
     this.courses = this.courseService.getCourses();
   }
 
