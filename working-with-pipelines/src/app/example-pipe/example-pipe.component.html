@@ -1,0 +1,7 @@
+<p>Titulo: {{book.title | uppercase}}</p>
+<p>Avaliação: {{book.rating | number:'2.1-2'}}</p>
+<p>Nº de Páginas: {{book.numberPage | number}}</p>
+<p>Preço: {{book.price| number}}</p>
+<p>Data de lançamento: {{book.dateRelease | date:'dd-MM-yyyy'}}</p>
+<p>Link: {{book.url}}</p>
+<p>Livro {{book | json}}</p>
