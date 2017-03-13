@@ -7,6 +7,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { CreateCourseComponent } from './create-course/create-course.component';
+import { LogService } from './shared/log.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { CreateCourseComponent } from './create-course/create-course.component';
     CoursesModule,
     CreateCourseModule
   ],
-  providers: [],
+  providers: [LogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
