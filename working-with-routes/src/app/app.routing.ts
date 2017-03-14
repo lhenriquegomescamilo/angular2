@@ -1,4 +1,4 @@
-import { CourseDetailComponent } from './course/course-detail/course-detail.component';
+import { CourseDetailComponent } from './course-detail/course-detail.component';
 import { HomeModule } from './home/home.module';
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from "@angular/router";

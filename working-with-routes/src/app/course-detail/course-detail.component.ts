@@ -4,8 +4,8 @@ import { Subscription } from "rxjs/Rx";
 
 @Component({
   selector: 'app-course-detail',
-  templateUrl: './course-detail.component.html',
-  styleUrls: ['./course-detail.component.css']
+  templateUrl: 'course-detail.component.html',
+  styleUrls: ['course-detail.component.css']
 })
 export class CourseDetailComponent implements OnInit {
 
@@ -23,7 +23,7 @@ export class CourseDetailComponent implements OnInit {
         this.id = params['id'];
       });
   }
-  ngOnDestroy(){
+  ngOnDestroy() {
     this.subscription.unsubscribe();
   }
 
